@@ -35,3 +35,17 @@ class naverSearch(object):
             return None
         else:
             return json.loads(retData)
+
+    #데이터 처리
+    def getPostData(self, post, jsonResult):
+        title = post['title']
+        desc = post['description']
+        org_link = post['originallink']
+        link = post['link']
+        pDate = datetime.datetime.strptime(post['pubDate'], '%a, %d %b %Y %H:%M:%S +0900')  #문자열로 들어온 값을 데이터타입 형태로 파싱하는 것
+        p_date = pDate.strftime('%Y-%m-%d %H:%M:%S')    #위 데이터 형식을 지금처럼 바꿔서 쓰겠다는 의미
+
+        jsonResult.append({})
+        pass
+        return
+

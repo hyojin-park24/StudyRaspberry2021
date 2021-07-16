@@ -66,18 +66,18 @@
      </property>
     </widget>
    </widget>
-   <widget class="QListView" name="lsvResult">
+   <widget class="QTableWidget" name="tblResult">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>110</y>
+      <y>100</y>
       <width>521</width>
-      <height>311</height>
+      <height>331</height>
      </rect>
     </property>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QStatusBar" name="stsResult"/>
  </widget>
  <resources/>
  <connections/>
